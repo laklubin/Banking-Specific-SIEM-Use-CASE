@@ -2,6 +2,8 @@
 
 A browsable catalogue of **152 banking-specific SIEM detection use cases**, published as a static website.
 
+**Live site: https://laklubin.github.io/Banking-Specific-SIEM-Use-CASE/**
+
 Each use case records four things:
 
 | Field | Purpose |
@@ -38,9 +40,9 @@ Open `index.html` in a browser — there is no build step and no dependencies.
 - Export the current selection to CSV for import into a SIEM content backlog or GRC register
 - Light and dark themes, print-friendly layout
 
-### Publishing with GitHub Pages
+### Publishing
 
-Settings → Pages → Build and deployment → Deploy from a branch → select this branch, folder `/ (root)`.
+The site is served by GitHub Pages from the `main` branch, root folder. Any push to `main` republishes it automatically — there is nothing to build.
 
 ## Repository layout
 
