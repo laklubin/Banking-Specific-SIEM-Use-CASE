@@ -177,10 +177,10 @@
   }
 
   function initTheme() {
+    /* Dark is the default. Only a theme the viewer picked here overrides it. */
     var saved = null;
     try { saved = localStorage.getItem("siem-theme"); } catch (e) {}
-    if (!saved && window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) saved = "light";
-    document.documentElement.dataset.theme = saved || "dark";
+    document.documentElement.dataset.theme = saved === "light" ? "light" : "dark";
   }
 
   initTheme();
